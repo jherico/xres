@@ -2,12 +2,25 @@
   <modelVersion>4.0.0</modelVersion>
   <parent>
     <groupId>org.saintandreas</groupId>
-    <artifactId>saintandreas-parent</artifactId>
-    <version>2.0.0</version>
+    <artifactId>parent</artifactId>
+    <version>1.0.0</version>
   </parent>
   <artifactId>xres</artifactId>
   <version>1.0.2-SNAPSHOT</version>
-  <name>Cross-Platform Resource Wrappers</name>
+  <packaging>jar</packaging>
+
+  <name>Saint Andreas Cross-Platform Resource Wrappers</name>
+  <description>These wrappers are designed to allow easy access to resources that are shared between C/C++ and Java applications</description>
+  
+  <licenses>
+    <license>
+      <name>The Apache Software License, Version 2.0</name>
+      <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+      <distribution>repo</distribution>
+    </license>
+  </licenses>
+
+  <url>http://rifty-business.blogspot.com/</url>
 
   <scm>
     <connection>scm:git:https://github.com/jherico/xres.git</connection>
@@ -15,45 +28,10 @@
     <url>https://github.com/jherico/xres</url>
   </scm>
 
-  <repositories>
-    <repository>
-      <id>saintandreas-org-mvn-repo</id>
-      <url>http://maven.saintandreas.org/maven</url>
-      <snapshots>
-        <enabled>true</enabled>
-        <updatePolicy>always</updatePolicy>
-      </snapshots>
-    </repository>
-  </repositories>
-
   <dependencies>
-    <dependency>
-      <groupId>com.google.code.findbugs</groupId>
-      <artifactId>jsr305</artifactId>
-    </dependency>
-    <dependency>
-      <groupId>org.slf4j</groupId>
-      <artifactId>slf4j-api</artifactId>
-    </dependency>
-    <dependency>
-      <groupId>org.slf4j</groupId>
-      <artifactId>slf4j-log4j12</artifactId>
-      <scope>test</scope>
-    </dependency>
     <dependency>
       <groupId>com.google.guava</groupId>
       <artifactId>guava</artifactId>
     </dependency>
   </dependencies>
-  <build>
-    <plugins>
-      <plugin>
-        <artifactId>maven-compiler-plugin</artifactId>
-        <configuration>
-          <source>1.7</source>
-          <target>1.7</target>
-        </configuration>
-      </plugin>
-    </plugins>
-  </build>
 </project>
