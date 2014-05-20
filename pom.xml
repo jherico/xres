@@ -1,4 +1,5 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <parent>
     <groupId>org.saintandreas</groupId>
@@ -11,7 +12,7 @@
 
   <name>Saint Andreas Cross-Platform Resource Wrappers</name>
   <description>These wrappers are designed to allow easy access to resources that are shared between C/C++ and Java applications</description>
-  
+
   <licenses>
     <license>
       <name>The Apache Software License, Version 2.0</name>
@@ -20,13 +21,20 @@
     </license>
   </licenses>
 
-  <url>http://rifty-business.blogspot.com/</url>
-
   <scm>
-    <connection>scm:git:https://github.com/jherico/xres.git</connection>
+    <connection>scm:git:git@github.com:jherico/xres.git</connection>
     <developerConnection>scm:git:git@github.com:jherico/xres.git</developerConnection>
     <url>https://github.com/jherico/xres</url>
   </scm>
+
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-gpg-plugin</artifactId>
+      </plugin>
+    </plugins>
+  </build>
 
   <dependencies>
     <dependency>
